@@ -1,0 +1,788 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;    
+}
+  
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+}
+  
+header {
+  background-image: url(./img/1_hero/JPG/hero_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  
+.sakuraLogo {
+  padding-left: 160px;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+nav {
+  padding-right: 160px;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+  
+.navigator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.phoneLogo {
+  height: 20px;
+  width: 20px;
+}
+  
+.phoneButton {
+  background-color: #9F0908;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px
+}
+ 
+.slogen {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 96px;
+  margin-top: 0;
+  text-align: center;
+}
+  
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 120px;
+  padding-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #9F0908;
+}
+  
+h3 {
+  font-family: "Economica", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  color: black;
+}
+  
+.orderLogo img {
+  width: 128px;
+  margin-bottom: 16px;
+}
+  
+.orderLogo {
+  font-family: "Economica", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+  
+.order {
+  display: flex;
+  justify-content: space-around;
+}
+  
+main {
+  background-image: url(./img/3_section_our_menu/JPG/section_our_menu_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-bottom: 120px;
+}
+  
+main img {
+  width: 352px;
+  height: 352px;
+}
+  
+.mainMenu {
+  display: flex;
+  padding-bottom: 56px;
+}
+  
+main table {
+  margin-right: 80px;
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #675E54;
+  border-spacing: 0;
+}
+  
+.left {
+  margin-left: 80px;
+  margin-right: 0;
+  justify-content: left;
+}
+ 
+.right {
+  justify-content: right;
+}
+  
+.kontakt {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  padding-bottom: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+  
+.kontakt img {
+  object-fit: cover;
+  height: 16px;
+}
+  
+.kontakt h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+  
+.googlemap {
+  height: 500px;
+  width: -webkit-fill-available;
+  border-spacing: 0;
+}
+  
+footer {
+  background-color: #0A141E;
+  height: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+  
+footer img {
+  height: 44px;
+}
+  
+.icons {
+  display: flex;
+}
+  
+.icons img {
+  height: 40px;
+  width: 40px;
+}
+
+
+@media(min-width: 1440px) {
+  .maxW {
+    max-width: 1440px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media(max-width: 970px) {
+  .hidebar {
+    display: none;
+  }
+
+  .sakuraLogo {
+    padding-left: 152px;
+  }
+
+  nav {
+    padding: 152px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+  
+  h2 {
+    font-size: 76px;
+  }
+
+  h3 {
+    font-size: 52px;
+  }
+
+  main table {
+    font-size: 30px;
+  }  
+}
+
+@media(max-width: 900px) {
+  .mediacolum {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columnreverse {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+ 
+  table,.left,.right,main table {
+    margin: 0;
+  }
+
+  main {
+    align-items: center;
+  }
+
+  .center {
+    align-items: center;
+    text-align: center;
+  }
+
+  .sakuraLogo {
+    padding-left: 146px;
+  }
+
+  nav {
+    padding: 146px;
+  }
+
+  h1 {
+    font-size: 86px;
+  }
+  
+  h2 {
+    font-size: 72px;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+
+  main table {
+    font-size: 29px;
+  }  
+}
+
+@media(max-width: 850px) {
+  .icons {
+    display: none;
+  }
+
+  .sakuraLogo {
+    padding-left: 138px;
+  }
+
+  nav {
+    padding: 138px;
+  }
+
+  h1 {
+    font-size: 82px;
+  }
+  
+  h2 {
+    font-size: 68px;
+  }
+
+  h3 {
+    font-size: 44px;
+  }
+
+  main table {
+    font-size: 28px;
+  }  
+}
+
+@media(max-width: 800px) {
+  .sakuraLogo {
+    padding-left: 130px;
+  }
+
+  nav {
+    padding: 130px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+  
+  h2 {
+    font-size: 66px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+
+  main table {
+    font-size: 27px;
+  }  
+}
+
+@media(max-width: 780px) {
+  .sakuraLogo {
+    padding-left: 122px;
+  }
+
+  nav {
+    padding: 122px;
+  }
+  
+  h1 {
+    font-size: 76px;
+  }
+  
+  h2 {
+    font-size: 56px;
+  }
+
+  h3 {
+    font-size: 38px;
+  }
+
+  main table {
+    font-size: 24px;
+  }
+
+  .kontakt {
+    font-size: 16px;
+  }
+
+  .slogen {
+    font-size: 20px;
+  }
+
+  footer img {
+    height: 32px;
+  }
+}
+
+@media(max-width: 750px) {
+  .sakuraLogo {
+    padding-left: 114px;
+  }
+
+  nav {
+    padding: 114px;
+  }
+  
+  h1 {
+    font-size: 74px;
+  }
+  
+  h2 {
+    font-size: 52px;
+  }
+
+  h3 {
+    font-size: 34px;
+  }
+
+  main table {
+    font-size: 22px;
+  }
+
+  .slogen {
+    font-size: 20px;
+  }
+
+  footer img {
+    height: 32px;
+  }
+}
+
+@media(max-width: 700px) {
+  .sakuraLogo {
+    padding-left: 106px;
+  }
+
+  nav {
+    padding: 106px;
+  }
+  
+  h1 {
+    font-size: 70px;
+  }
+  
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  main table {
+    font-size: 20px;
+  }
+
+  .slogen {
+    font-size: 19px;
+  }
+
+  footer img {
+    height: 31px;
+  }
+}
+
+@media(max-width: 665px) {
+  .sakuraLogo {
+    padding-left: 98px;
+  }
+
+  nav {
+    padding: 98px;
+  }
+  
+  h1 {
+    font-size: 65px;
+  }
+  
+  h2 {
+    font-size: 43px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  main table {
+    font-size: 18px;
+  }
+
+  .slogen {
+    font-size: 18px;
+  }
+
+  footer img {
+    height: 24px;
+  }
+
+  main img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .orderLogo img {
+    width: 100px;
+  }
+}
+
+@media(max-width: 600px) {
+  footer {
+    justify-content: center;
+  }
+
+  .sakuraLogo {
+    padding-left: 90px;
+  }
+
+  nav {
+    padding: 90px;
+  }
+  
+  h1 {
+    font-size: 60px;
+  }
+  
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  main table {
+    font-size: 17px;
+  }
+
+  .slogen {
+    font-size: 17px;
+  }
+
+  footer img {
+    height: 23px;
+  }
+
+  main img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .orderLogo img {
+    width: 100px;
+  }
+}
+
+@media(max-width: 600px) {
+  .sakuraLogo {
+    padding-left: 80px;
+  }
+
+  nav {
+    padding: 80px;
+  }
+}
+
+@media(max-width: 580px) {
+  .sakuraLogo {
+    padding-left: 70px;
+  }
+
+  nav {
+    padding: 70px;
+  }
+}
+
+
+@media(max-width: 555px) {
+  .sakuraLogo {
+    padding-left: 60px;
+  }
+
+  nav {
+    padding: 60px;
+  }
+  
+  h1 {
+    font-size: 55px;
+  }
+  
+  h2 {
+    font-size: 33px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+  
+  main img {
+    width: 290px;
+    height: 290px;
+  }
+
+  .orderLogo img {
+    width: 90px;
+  }
+}
+
+@media(max-width: 500px) {
+  .sakuraLogo {
+    padding-left: 50px;
+  }
+
+  nav {
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+  
+  main img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .orderLogo img {
+    width: 85px;
+  }
+}
+
+@media(max-width: 455px) {
+  .sakuraLogo {
+    padding-left: 40px;
+  }
+
+  nav {
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 45px;
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  
+  nav {
+    font-size: 22px;
+  }
+
+  main img {
+    width: 270px;
+    height: 270px;
+  }
+
+  .orderLogo img {
+    width: 80px;
+  }
+}
+
+@media(max-width: 420px) {
+  .sakuraLogo {
+    padding-left: 35px;
+  }
+
+  nav {
+    padding: 35px;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+
+  nav {
+    font-size: 20px;
+  }
+  
+  main img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .orderLogo img {
+    width: 75px;
+  }
+
+  footer {
+    padding: 0;
+  }
+}
+
+@media(max-width: 420px) {
+  .sakuraLogo {
+    padding-left: 20px;
+  }
+
+  nav {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 35px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+  
+  main table {
+    font-size: 16px
+  }
+  
+  main img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .orderLogo img {
+    width: 72px;
+  }
+}
+
+@media(max-width: 380px) {
+  
+  nav {
+    font-size: 16px;
+  }
+
+  main img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .orderLogo img {
+    width: 70px;
+  }
+
+  .sakuraLogo {
+    padding-left: 10px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
